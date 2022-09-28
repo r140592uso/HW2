@@ -29,13 +29,20 @@ let user = {
   firstname: "giorgi",
   lastname: "saakadze",
   age: 32,
-  isloggedin: true,
-};
-if (user.isloggedin === true) {
-  console.log(user.firstname, user.lastname);
-} else if (user.isloggedin === false) {
-  console.log(user.isloggedin);
+  isloggedin: true
 }
+
+function username(user){
+  if(user.isloggedin){
+    return user.firstname + " " + user.lastname;
+  }
+  else{
+    return false;
+  }
+}
+let result = username(user);
+console.log(result); 
+
 // 4.შექმენით ფუნქცია რომელსაც გადაეცემა ერთი პარამეტრი. ეს პარამეტრი უნდა იყოს რიცხვების მასივი და ფუნქციამ უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
 
 function max(number) {
