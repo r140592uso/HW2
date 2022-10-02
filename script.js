@@ -11,7 +11,7 @@ function sumpositive(...numbers) {
   console.log(numbersum);
 }
 sumpositive(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
-
+§
 // 2.ფუნქციის საშულებით გამოიტანეთ ყველა რიცხვის ჯამი: 10, 50, 6, 7, 8, 11, 6, 3, 9
 
 function sum(...numbers1) {
